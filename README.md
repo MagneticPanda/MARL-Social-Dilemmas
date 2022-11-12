@@ -173,7 +173,7 @@ Download my trained A3C, PPO, and R2D2 models from this [Google Drive link](http
 Extract the contents to the "testing" subdirectory (from step 3). You should now have two subfolders in the "testing" folder: "cu_ray_logs" and "pd_ray_logs" which
 contain the A3C, PPO, and R2D2 models for Clean Up and Prisoner's Dilemma respectively.
 
-8. (Optional) Install `ffmpeg` for environment recording
+9. (Optional) Install `ffmpeg` for environment recording
 
     On Unbuntu:
     ```shell
@@ -191,42 +191,42 @@ Each of these scripts are designed to be run from the command line, as is the st
 
 `training_and_eval.py` takes the following command line arguments:
 
-    `-- experiment_name`: A custom name for the experiment.
+- `-- experiment_name`: A custom name for the experiment.
 
-    `-- substrate`: The substrate to use for training and evaluation ('clean_up' or 'prisoners_dilemma_in_the_matrix'). 
+- `-- substrate`: The substrate to use for training and evaluation ('clean_up' or 'prisoners_dilemma_in_the_matrix'). 
 
-    `-- algorithm`: The algorithm to use for training and evaluation ('A3C', 'PPO', 'R2D2'). 
+- `-- algorithm`: The algorithm to use for training and evaluation ('A3C', 'PPO', 'R2D2'). 
 
-    `-- use_policy_sharing`: Whether to use policy sharing or not (True / False).
+- `-- use_policy_sharing`: Whether to use policy sharing or not (True / False).
 
-    `-- num_iterations`: The number of iterations to train for.
+- `-- num_iterations`: The number of iterations to train for.
 
-    `-- local_dir`: The directory to store the experiment results in.
+- `-- local_dir`: The directory to store the experiment results in.
 
-    `-- use_gpu`: Whether to use GPU training or not (True / False). 
+- `-- use_gpu`: Whether to use GPU training or not (True / False). 
 
-    `-- record_env`: Whether to record the environment or not (True / False).
+- `-- record_env`: Whether to record the environment or not (True / False).
 
 Example usage: 
     
-    ```shell
-    python honoursproj/train_and_eval.py --experiment_name CustomExp --substrate clean_up --algorithm A3C --use_policy_sharing True --num_iterations 10 --local_dir testing/temp --use_gpu False --record_env True
-    ```
+```shell
+python honoursproj/train_and_eval.py --experiment_name CustomExp --substrate clean_up --algorithm A3C --use_policy_sharing True --num_iterations 10 --local_dir testing/temp --use_gpu False --record_env True
+```
 
 `scenario_testing.py` takes the following command line arguments:
 
-    `--scenario_name`: The name of the scenario to test. Must be in scenario.SCENARIOS_BY_SUBSTRATE.
-        Clean Up scenarios take the form: 'clean_up_<0-6>'
-        Prisoner's Dilemma scenarios take the form: 'prisoners_dilemma_in_the_matrix_<0-5>'
+- `--scenario_name`: The name of the scenario to test. Must be in scenario.SCENARIOS_BY_SUBSTRATE.
+    Clean Up scenarios take the form: 'clean_up_<0-6>'
+    Prisoner's Dilemma scenarios take the form: 'prisoners_dilemma_in_the_matrix_<0-5>'
 
-    `--algorithm`: The name of the algorithm to load and test.
+- `--algorithm`: The name of the algorithm to load and test.
 
-    `--use_policy_sharing`: (True / False) Whether to use policy sharing.
-        It is recommended to mirror the setting used during training.
+- `--use_policy_sharing`: (True / False) Whether to use policy sharing.
+    It is recommended to mirror the setting used during training.
 
-    `--substrate`: The name of the base substrate to test (clean_up / prisoners_dilemma_in_the_matrix)
+- `--substrate`: The name of the base substrate to test (clean_up / prisoners_dilemma_in_the_matrix)
 
-    `--experiment_path`: The path to the experiment directory where you saved the trained model.
+- `--experiment_path`: The path to the experiment directory where you saved the trained model.
 
 Example usage:
 
@@ -235,7 +235,7 @@ python honoursproj/scenario_testing.py --scenario_name prisoners_dilemma_in_the_
 ```
 
 ## Documentation
-For a software report, including toolkit evaluation and usability strategies, refer to the [docs subfolder](docs/)
+For a software report, including toolkit evaluation and usability strategies, refer to the [docs subfolder](/docs)
 
 ## Citing Research
 If you intend to use these findings in your work, please cite my accompanying thesis:
