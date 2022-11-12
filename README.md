@@ -166,12 +166,10 @@ NOTE: If you encounter a `NotFound`-esque error during any of the installation o
 
     You will need to download 2 sets of models. The first are the Melting Pot models for the background agents which is required if you run any 'scenario tests'. The second are the models which I trained for this research, which will govern the focal players' policies.
 
-Download the [Melting Pot models](https://storage.googleapis.com/dm-meltingpot/meltingpot-assets-1.0.0.tar.gz) and extract the contents to meltingpot/assets/saved_models.
-Note, if you chose 1.a, this this might have already been done for you.
+    i. Download the [Melting Pot models](https://storage.googleapis.com/dm-meltingpot/meltingpot-assets-1.0.0.tar.gz) and extract the contents to meltingpot/assets/saved_models. Note, if you chose 1.a, this this might have already been done for you.
 
-Download my trained A3C, PPO, and R2D2 models from this [Google Drive link](https://drive.google.com/file/d/1Go5dJ2q7AWLE7fFu8C4QFwrPd8NIdWR7/view?usp=share_link). 
-Extract the contents to the "testing" subdirectory (from step 3). You should now have two subfolders in the "testing" folder: "cu_ray_logs" and "pd_ray_logs" which
-contain the A3C, PPO, and R2D2 models for Clean Up and Prisoner's Dilemma respectively.
+    ii. Download my trained A3C, PPO, and R2D2 models from this [Google Drive link](https://drive.google.com/file/d/1Go5dJ2q7AWLE7fFu8C4QFwrPd8NIdWR7/view?usp=share_link). 
+    Extract the contents to the "testing" subdirectory (from step 3). You should now have two subfolders in the "testing" folder: "cu_ray_logs" and "pd_ray_logs" which contain the A3C, PPO, and R2D2 models for Clean Up and Prisoner's Dilemma respectively.
 
 9. (Optional) Install `ffmpeg` for environment recording
 
@@ -239,7 +237,7 @@ python honoursproj/scenario_testing.py --scenario_name clean_up_2 --algorithm PP
 ```
 
 ## Documentation
-For a software report, including toolkit evaluation and usability strategies, refer to the [docs subfolder](/docs/Software%20Report.pdf)
+For a software report, including toolkit evaluation and usability strategies, refer to the [software report](/docs/Software%20Report.pdf)
 
 ## Citing Research
 If you intend to use these findings in your work, please cite my accompanying thesis:
