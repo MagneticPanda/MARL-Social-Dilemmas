@@ -58,27 +58,23 @@ Note: The following steps assumes that you already have [Docker](https://www.doc
 2. Launch the devcontainer using the [VSCode Containers](https://code.visualstudio.com/docs/remote/containers-tutorial) extension.
 Note: You can skip this step if you followed option 1.b, as this would have already been done for you.
 
-Open the extracted folder in VSCode. The devcontainer extension should automatically detect the ".devcontainer" subdirectory inside the project and
-should subsequetly promompt you to run a container for the project. Accept this and wait for the process to finish. Note: This process will be shorter
-the next time you run the container.
+    Open the extracted folder in VSCode. The devcontainer extension should automatically detect the ".devcontainer" subdirectory inside the project and
+    should subsequetly promompt you to run a container for the project. Accept this and wait for the process to finish. Note: This process will be shorter
+    the next time you run the container.
 
 3. Merge the additions and changes made by my software.
 
-Simply drag and drop all the contents from my submission into the top-level directory (i.e. the same level as the READ_ME.md file). When promoted, give permission to
-override any files. Your software should now contain two new folders: "honoursproj" and "testing", along with the modifications I have made to some of the Melting Pot source files.
-You should be able to view/track these changes using git.
+    Simply drag and drop all the contents from my submission into the top-level directory (i.e. the same level as the READ_ME.md file). When promoted, give permission to override any files. Your software should now contain two new folders: "honoursproj" and "testing", along with the modifications I have made to some of the Melting Pot source files. You should be able to view/track these changes using git.
 
 4. Download the models
 
-You will need to download 2 sets of models. The first are the Melting Pot models for the background agents which is required if you run any 'scenario tests'. The
-second are the models which I trained for this research, which will govern the focal players' policies.
+    You will need to download 2 sets of models. The first are the Melting Pot models for the background agents which is required if you run any 'scenario tests'. The second are the models which I trained for this research, which will govern the focal players' policies.
 
-Download the [Melting Pot models](https://storage.googleapis.com/dm-meltingpot/meltingpot-assets-1.0.0.tar.gz) and extract the contents to meltingpot/assets/saved_models.
-Note, if you chose 1.a, this this might have already been done for you.
+    Download the [Melting Pot models](https://storage.googleapis.com/dm-meltingpot/meltingpot-assets-1.0.0.tar.gz) and extract the contents to meltingpot/assets/saved_models.
+    Note, if you chose 1.a, this this might have already been done for you.
 
-Download my trained A3C, PPO, and R2D2 models from this [Google Drive link](https://drive.google.com/file/d/1Go5dJ2q7AWLE7fFu8C4QFwrPd8NIdWR7/view?usp=share_link). 
-Extract the contents to the "testing" subdirectory (from step 3). You should now have two subfolders in the "testing" folder: "cu_ray_logs" and "pd_ray_logs" which
-contain the A3C, PPO, and R2D2 models for Clean Up and Prisoner's Dilemma respectively.
+    Download my trained A3C, PPO, and R2D2 models from this [Google Drive link](https://drive.google.com/file/d/1Go5dJ2q7AWLE7fFu8C4QFwrPd8NIdWR7/view?usp=share_link). Extract the contents to the "testing" subdirectory (from step 3). You should now have two subfolders in the "testing" folder: "cu_ray_logs" and "pd_ray_logs" which
+    contain the A3C, PPO, and R2D2 models for Clean Up and Prisoner's Dilemma respectively.
 
 5. (Optional) Install `ffmpeg` for environment recording
 
@@ -157,14 +153,11 @@ NOTE: If you encounter a `NotFound`-esque error during any of the installation o
 
 7. Merge the additions and changes made by my software.
 
-Simply drag and drop all the contents from my submission into the top level directory (i.e. the same level as the READ_ME.md file). When promoted, give permission to
-override any files. Your software shoud now contain two new folders: "honoursproject" and "testing", along with the modifications I have made to some of the Melting Pot source files.
-You should be able to view/track these changes using git.
+    Simply drag and drop all the contents from my submission into the top level directory (i.e. the same level as the READ_ME.md file). When promoted, give permission to override any files. Your software shoud now contain two new folders: "honoursproject" and "testing", along with the modifications I have made to some of the Melting Pot source files. You should be able to view/track these changes using git.
 
 8. Download the models
 
-You will need to download 2 sets of models. The first are the Melting Pot models for the background agents which is required if you run any 'scenario tests'. The
-second are the models which I trained for this research, which will govern the focal players' policies.
+    You will need to download 2 sets of models. The first are the Melting Pot models for the background agents which is required if you run any 'scenario tests'. The second are the models which I trained for this research, which will govern the focal players' policies.
 
 Download the [Melting Pot models](https://storage.googleapis.com/dm-meltingpot/meltingpot-assets-1.0.0.tar.gz) and extract the contents to meltingpot/assets/saved_models.
 Note, if you chose 1.a, this this might have already been done for you.
@@ -235,7 +228,7 @@ python honoursproj/scenario_testing.py --scenario_name prisoners_dilemma_in_the_
 ```
 
 ## Documentation
-For a software report, including toolkit evaluation and usability strategies, refer to the [docs subfolder](/docs)
+For a software report, including toolkit evaluation and usability strategies, refer to the [docs subfolder](/docs/)
 
 ## Citing Research
 If you intend to use these findings in your work, please cite my accompanying thesis:
