@@ -31,10 +31,12 @@ obtained. This research was conducted using the [Melting Pot](https://github.com
 protocol, which provides a standardised way to compare and contrast the
 efficacy of algorithms across a plethora of high quality environment implementaions.
 
-| ![Clean Up](https://user-images.githubusercontent.com/71750671/201497381-7658ce17-8d8e-40d2-9713-e5556c746329.gif)
-  | ![prisoners](https://user-images.githubusercontent.com/71750671/201497383-b4156425-2eb9-4ac9-833d-6e874e6a7017.gif)
-  |
-|  Clean Up | Prisoner's Dilemma  |
+
+
+
+| Clean Up  | Prisoner's Dilemma  |
+|:-:|:-:|
+| ![Clean Up](https://user-images.githubusercontent.com/71750671/201497381-7658ce17-8d8e-40d2-9713-e5556c746329.gif)  | ![prisoners](https://user-images.githubusercontent.com/71750671/201497383-b4156425-2eb9-4ac9-833d-6e874e6a7017.gif)  |
 
 ## Installation
 
