@@ -31,6 +31,9 @@ obtained. This research was conducted using the [Melting Pot](https://github.com
 protocol, which provides a standardised way to compare and contrast the
 efficacy of algorithms across a plethora of high quality environment implementaions.
 
+| ![Clean Up](../../../Downloads/Clean%20Up.gif)  | ![Prisoner's Dilemma in the Matrix](../../../Downloads/prisoners.gif)  |
+|:-:|:-:|
+|  Clean Up | Prisoner's Dilemma  |
 
 ## Installation
 
@@ -52,6 +55,7 @@ Note: The following steps assumes that you already have [Docker](https://www.doc
 1. Download Melting Pot v1.0.4. You can do this in two ways:
 
     a) Download from the [releases page](https://github.com/deepmind/meltingpot/releases/tag/v1.0.4) and extract the contents.
+
     b) Clone the repository into container using the devcontainer [VSCode extension](https://code.visualstudio.com/docs/remote/containers-tutorial).
     This should fetch the latest version, being version 1.0.4 at the time of writing this, and automatically launch a containerised environment.
 
@@ -70,10 +74,10 @@ Note: You can skip this step if you followed option 1.b, as this would have alre
 
     You will need to download 2 sets of models. The first are the Melting Pot models for the background agents which is required if you run any 'scenario tests'. The second are the models which I trained for this research, which will govern the focal players' policies.
 
-    Download the [Melting Pot models](https://storage.googleapis.com/dm-meltingpot/meltingpot-assets-1.0.0.tar.gz) and extract the contents to meltingpot/assets/saved_models.
+    i. Download the [Melting Pot models](https://storage.googleapis.com/dm-meltingpot/meltingpot-assets-1.0.0.tar.gz) and extract the contents to meltingpot/assets/saved_models.
     Note, if you chose 1.a, this this might have already been done for you.
 
-    Download my trained A3C, PPO, and R2D2 models from this [Google Drive link](https://drive.google.com/file/d/1Go5dJ2q7AWLE7fFu8C4QFwrPd8NIdWR7/view?usp=share_link). Extract the contents to the "testing" subdirectory (from step 3). You should now have two subfolders in the "testing" folder: "cu_ray_logs" and "pd_ray_logs" which
+    ii. Download my trained A3C, PPO, and R2D2 models from this [Google Drive link](https://drive.google.com/file/d/1Go5dJ2q7AWLE7fFu8C4QFwrPd8NIdWR7/view?usp=share_link). Extract the contents to the "testing" subdirectory (from step 3). You should now have two subfolders in the "testing" folder: "cu_ray_logs" and "pd_ray_logs" which
     contain the A3C, PPO, and R2D2 models for Clean Up and Prisoner's Dilemma respectively.
 
 5. (Optional) Install `ffmpeg` for environment recording
@@ -182,6 +186,8 @@ This software is comprised of two main scripts:
 
 Each of these scripts are designed to be run from the command line, as is the standard for SOTA approaches.
 
+### Training and Evaluation
+
 `training_and_eval.py` takes the following command line arguments:
 
 - `-- experiment_name`: A custom name for the experiment.
@@ -200,11 +206,13 @@ Each of these scripts are designed to be run from the command line, as is the st
 
 - `-- record_env`: Whether to record the environment or not (True / False).
 
-Example usage: 
+Example command: 
     
 ```shell
-python honoursproj/train_and_eval.py --experiment_name CustomExp --substrate clean_up --algorithm A3C --use_policy_sharing True --num_iterations 10 --local_dir testing/temp --use_gpu False --record_env True
+python honoursproj/train_and_eval.py --experiment_name CustomExp --substrate clean_up --algorithm R2D2 --use_policy_sharing True --num_iterations 10 --local_dir testing/temp --use_gpu False --record_env True
 ```
+
+### Scenario Testing
 
 `scenario_testing.py` takes the following command line arguments:
 
@@ -221,14 +229,14 @@ python honoursproj/train_and_eval.py --experiment_name CustomExp --substrate cle
 
 - `--experiment_path`: The path to the experiment directory where you saved the trained model.
 
-Example usage:
+Example command:
 
 ```shell
-python honoursproj/scenario_testing.py --scenario_name prisoners_dilemma_in_the_matrix_2 --algorithm PPO --use_policy_sharing False --substrate prisoners_dilemma_in_the_matrix --experiment_path testing/pd_ray_logs/PD_PPO_NPS
+python honoursproj/scenario_testing.py --scenario_name clean_up_2 --algorithm PPO --use_policy_sharing True --substrate clean_up --experiment_path testing/cu_ray_logs/CU_PPO
 ```
 
 ## Documentation
-For a software report, including toolkit evaluation and usability strategies, refer to the [docs subfolder](/docs/)
+For a software report, including toolkit evaluation and usability strategies, refer to the [docs subfolder](/docs/Software%20Report.pdf)
 
 ## Citing Research
 If you intend to use these findings in your work, please cite my accompanying thesis:
