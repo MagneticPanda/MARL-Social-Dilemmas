@@ -1,1 +1,1 @@
-This is a placeholder to store any of you custom experiments if you do not pass through your own through the `experimentpath` command line argument for the `training_and_eval.py` script.
+This is a placeholder to store any of you custom experiments if you do not pass through your own through the `local_dir` command line argument for the `training_and_eval.py` script.
