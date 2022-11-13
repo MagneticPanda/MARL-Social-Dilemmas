@@ -31,11 +31,11 @@ obtained. This research was conducted using the [Melting Pot](https://github.com
 protocol, which provides a standardised way to compare and contrast the
 efficacy of algorithms across a plethora of high quality environment implementaions.
 
-A video presentation, including a demonstration of the software, can be accessed via this [Google Drive link](https://drive.google.com/file/d/1izaOwiQttb6pinNZCmnAlYFyZzwBcs6c/view?usp=share_link)
-
 | Clean Up  | Prisoner's Dilemma  |
 |:-:|:-:|
 | ![Clean Up](https://user-images.githubusercontent.com/71750671/201497381-7658ce17-8d8e-40d2-9713-e5556c746329.gif)  | ![prisoners](https://user-images.githubusercontent.com/71750671/201497383-b4156425-2eb9-4ac9-833d-6e874e6a7017.gif)  |
+
+A video presentation, including a demonstration of the software, can be accessed via this [Google Drive link](https://drive.google.com/file/d/1izaOwiQttb6pinNZCmnAlYFyZzwBcs6c/view?usp=share_link)
 
 ## Installation
 
