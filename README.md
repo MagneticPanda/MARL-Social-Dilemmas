@@ -31,7 +31,7 @@ obtained. This research was conducted using the [Melting Pot](https://github.com
 protocol, which provides a standardised way to compare and contrast the
 efficacy of algorithms across a plethora of high quality environment implementaions.
 
-A video presentation, including deomonstration of the software can be accessed via this [Google Drive link](https://drive.google.com/file/d/1izaOwiQttb6pinNZCmnAlYFyZzwBcs6c/view?usp=share_link)
+A video presentation, including a deomonstration of the software, can be accessed via this [Google Drive link](https://drive.google.com/file/d/1izaOwiQttb6pinNZCmnAlYFyZzwBcs6c/view?usp=share_link)
 
 | Clean Up  | Prisoner's Dilemma  |
 |:-:|:-:|
