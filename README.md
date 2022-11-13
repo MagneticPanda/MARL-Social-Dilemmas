@@ -37,6 +37,8 @@ efficacy of algorithms across a plethora of high quality environment implementai
 
 A video presentation, including a demonstration of the software, can be accessed via this [Google Drive link](https://drive.google.com/file/d/1izaOwiQttb6pinNZCmnAlYFyZzwBcs6c/view?usp=share_link)
 
+If you would just like to see the software demonstration part, it can be accessed via this [Google Drive link](https://drive.google.com/file/d/1D-YLmhQfSXUa0Pm6zCbGxE3j5z9bkDSh/view?usp=share_link)
+
 ## Installation
 
 In short, this software requires the user to install [Melting Pot](https://github.com/deepmind/meltingpot) and merge the contents
