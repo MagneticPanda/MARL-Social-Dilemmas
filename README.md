@@ -241,7 +241,7 @@ python honoursproj/scenario_testing.py --scenario_name clean_up_2 --algorithm PP
 For a software report, including toolkit evaluation and usability strategies, refer to the [software report](/docs/Software%20Report.pdf)
 
 ## Citing Research
-If you intend to use these findings in your work, please cite my accompanying thesis:
+If you intend to use these findings in your work, please cite [my accompanying thesis](https://drive.google.com/file/d/1fL6TqUzaKk1a7NTe55xECWrFxckHDfAp/view?usp=share_link):
 
 ```bibtex
 @inproceedings{sashen2022marlsocialdilemmas,
